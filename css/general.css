@@ -1,0 +1,91 @@
+@-moz-viewport { width: device-width; scale: 1; }
+@-ms-viewport { width: device-width; scale: 1; }
+@-o-viewport { width: device-width; scale: 1; }
+@-webkit-viewport { width: device-width; scale: 1; }
+@viewport { width: device-width; scale: 1; }
+
+html {
+	min-width: 506px;
+	max-width: 600px;
+	font: normal 100%/1.4 Tahoma, san-serif;
+	background-color: #000;
+	color: #fff;
+}
+
+header {
+	overflow: hidden;
+}
+
+.logo {
+	margin: 0;
+}
+
+h1 {
+	float: right;
+	text-align: left;
+}
+
+nav {
+	text-align: center;
+	list-style-type: none;
+	display: inline-block;
+}
+
+nav li {
+	display: inline-block;
+	margin: 0;
+	padding: 5%;
+}
+
+nav a,
+nav a:link,
+nav a:visited {
+	display: inline-block;
+}
+
+.main-bucket {
+	display: block;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+footer {
+	font-size: 0.75em;
+	display: inline;
+}
+
+@media only screen and (min-width: 37.5em) {
+	html {
+		max-width:1200px;
+		width: 100%;
+	}
+	
+	nav li,
+	nav a,
+	nav a:link,
+	nav a:visited {
+		display: list-item;
+		padding: 10%;
+		text-align: left;
+		list-style-type: none;
+	}
+	
+	.right {
+		vertical-align: top;
+		width: 80%;
+		float: right;
+	}
+	
+	.left {
+		width: 20%;
+	}
+}
+
+@media only screen and (min-width: 80em) {	
+	html {
+		max-width: 3000px;
+		width: 100%;
+		font-size: 1.5em;
+	}
+}
