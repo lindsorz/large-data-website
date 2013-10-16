@@ -13,6 +13,10 @@ html {
 	font-size: 1em;
 }
 
+.search {
+	float: right;
+}
+
 header {
 	width: 100%;
 	background-color: #000;
