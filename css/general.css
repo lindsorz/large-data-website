@@ -5,36 +5,46 @@
 @viewport { width: device-width; scale: 1; }
 
 html {
-	min-width: 506px;
+	min-width: 240px;
 	max-width: 600px;
-	font: normal 100%/1.4 Tahoma, san-serif;
-	background-color: #000;
-	color: #fff;
+	color: #D8E7DE;
+	background-image: url(../img/dark-mosaic/dark-mosaic.png);
+	font-family: "Avenir", sans-serif;
+	font-size: 1em;
 }
 
 header {
-	overflow: hidden;
+	width: 100%;
+	background-color: #000;
+	margin-bottom: -30px;
 }
 
 .logo {
 	margin: 0;
+	max-width: 200px;
+	padding-left: 5%;
 }
 
 h1 {
-	float: right;
 	text-align: left;
+	padding-left: 5%;
+	color: #19494D;
+	font-family: "Emmascript MVB Std";
+	font-size: 3em;
 }
 
 nav {
 	text-align: center;
-	list-style-type: none;
-	display: inline-block;
+	background-color: #4D7036;
+	padding: 7px 0 7px 0;
+	width: 100%;
 }
 
 nav li {
-	display: inline-block;
-	margin: 0;
-	padding: 5%;
+	list-style-type: none;
+	display: inline;
+	padding-right: 10%;
+	color: #000;
 }
 
 nav a,
@@ -50,42 +60,58 @@ nav a:visited {
 	padding: 0;
 }
 
+.unit {
+  display: inline-block;
+  *display: inline;
+  zoom: 1;
+  letter-spacing: normal;
+  text-rendering: auto;
+  vertical-align: top;
+  word-spacing: normal;
+}
+
 footer {
 	font-size: 0.75em;
 	display: inline;
+	color: #19494D; 
 }
 
-@media only screen and (min-width: 37.5em) {
-	html {
-		max-width:1200px;
-		width: 100%;
-	}
-	
-	nav li,
-	nav a,
-	nav a:link,
-	nav a:visited {
-		display: list-item;
-		padding: 10%;
-		text-align: left;
-		list-style-type: none;
-	}
-	
-	.right {
-		vertical-align: top;
-		width: 80%;
-		float: right;
-	}
-	
-	.left {
-		width: 20%;
-	}
+@media only screen and (min-width: 37.75em) {
+html {
+	max-width: 1200px;
 }
 
-@media only screen and (min-width: 80em) {	
-	html {
-		max-width: 3000px;
-		width: 100%;
-		font-size: 1.5em;
-	}
+nav {
+	text-align: left;
+	width: 25%;
+}
+
+nav li {
+	display: block;
+	padding-bottom: 15px;
+}
+
+.unit-m-1-2 {
+    width: 75%;
+	float: right;
+	margin-top: -157px;
+}
+ 
+p {
+	padding-left: 5%; 
+}
+}
+
+@media only screen and (min-width: 80em) {
+html {
+	font-size: 1.5em;
+}
+
+.unit-m-1-2 {
+	margin-top: -206px;
+}
+
+header {
+	margin-bottom: -50px;
+}
 }
