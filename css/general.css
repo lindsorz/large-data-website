@@ -14,32 +14,35 @@ html {
 }
 
 .search {
-	float: right;
+	text-align: right;
+	display: inline-block;
+	width: 100%;
 }
 
 header {
 	width: 100%;
-	background-color: #000;
-	margin-bottom: -30px;
+	height: 200px;
+	margin-bottom: 50px;
 }
 
 .logo {
-	margin: 0;
 	max-width: 200px;
-	padding-left: 5%;
+	padding-left: 20px;
 }
 
 h1 {
-	text-align: left;
-	padding-left: 5%;
+	padding-left: 20px;
+	margin: 0;
+	display: inline;
+	width: 100%;
 	color: #19494D;
 	font-family: "Emmascript MVB Std";
 	font-size: 3em;
+	text-shadow: 0 0 1em #19494D, 0 0 1em #19494D, 0 0 1em #19494D;
 }
 
 nav {
 	text-align: center;
-	background-color: #4D7036;
 	padding: 7px 0 7px 0;
 	width: 100%;
 }
@@ -49,6 +52,7 @@ nav li {
 	display: inline;
 	padding-right: 10%;
 	color: #000;
+	text-shadow: 0 0 0.5em #4D7036, 0 0 0.5em #4D7036, 0 0 0.5em #4D7036;
 }
 
 nav a,
@@ -83,6 +87,17 @@ footer {
 @media only screen and (min-width: 37.75em) {
 html {
 	max-width: 1200px;
+}
+
+header {
+	overflow: hidden;
+}
+
+.logo {
+	float: left;
+}
+
+h1 {
 }
 
 nav {
