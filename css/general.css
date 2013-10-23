@@ -20,7 +20,7 @@ html {
 }
 
 header {
-	width: 100%;
+	width: auto;
 	height: 200px;
 	margin-bottom: 50px;
 }
@@ -28,17 +28,38 @@ header {
 .logo {
 	max-width: 200px;
 	padding-left: 20px;
+	display: block;
 }
 
 h1 {
 	padding-left: 20px;
 	margin: 0;
-	display: inline;
+	display: inline-block;
 	width: 100%;
 	color: #19494D;
 	font-family: "Emmascript MVB Std";
 	font-size: 3em;
 	text-shadow: 0 0 1em #19494D, 0 0 1em #19494D, 0 0 1em #19494D;
+}
+
+h2 {
+	padding-left: 20px;
+	padding-top: 20px;
+	margin: 0;
+	display: inline-block;
+	color: #B9D686;
+	font-family: "Emmascript MVB Std";
+	font-size: 2em;
+	text-shadow: 0 0 1em #B9D686, 0 0 1em #B9D686, 0 0 1em #B9D686;
+}
+
+h3 {
+	padding-left: 25px;
+	padding-bottom: -5px;
+	color: #B9D686;
+	font-family: "Emmascript MVB Std";
+	font-size: 1.5em;
+	text-shadow: 0 0 1em #B9D686, 0 0 1em #B9D686, 0 0 1em #B9D686;
 }
 
 nav {
@@ -61,11 +82,21 @@ nav a:visited {
 	display: inline-block;
 }
 
+.selected {
+	color: #B9D686;
+	text-shadow: 0 0 0.5em #4D7036, 0 0 0.5em #4D7036, 0 0 0.5em #4D7036
+}
+
 .main-bucket {
 	display: block;
 	width: 100%;
 	margin: 0;
 	padding: 0;
+}
+
+.firefly {
+	max-width: 100%;
+	display: block;
 }
 
 .unit {
@@ -90,19 +121,23 @@ html {
 }
 
 header {
-	overflow: hidden;
+	margin-bottom: 0;
+	
 }
 
 .logo {
 	float: left;
+	display: block;
 }
 
 h1 {
+	display: block;
+	padding-top: 135px;
 }
 
 nav {
 	text-align: left;
-	width: 25%;
+	max-width: 150px;
 }
 
 nav li {
@@ -110,14 +145,32 @@ nav li {
 	padding-bottom: 15px;
 }
 
-.unit-m-1-2 {
-    width: 75%;
-	float: right;
-	margin-top: -157px;
+.unit-s-1-3 {
+    width: 33.33333%;
 }
+ 
+.unit-s-2-3 {
+    width: 66.66667%;
+}
+
+.unit-m-1-2 {
+    width: 80%;
+	margin-left: 150px;
+	display: inline-block;
+	padding-top: -150px;
+} 
  
 p {
 	padding-left: 5%; 
+}
+
+.firefly {
+	max-width: 50%;
+}
+
+.firefly-1-2 {
+	float: right;
+	
 }
 }
 
@@ -128,9 +181,5 @@ html {
 
 .unit-m-1-2 {
 	margin-top: -206px;
-}
-
-header {
-	margin-bottom: -50px;
 }
 }
