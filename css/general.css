@@ -62,29 +62,66 @@ h3 {
 	text-shadow: 0 0 1em #B9D686, 0 0 1em #B9D686, 0 0 1em #B9D686;
 }
 
-nav {
-	text-align: center;
-	padding: 7px 0 7px 0;
-	width: 100%;
+.nav-menu {
+	padding: 0;
+	margin: 0;	
 }
 
-nav li {
-	list-style-type: none;
-	display: inline;
-	padding-right: 10%;
-	color: #000;
-	text-shadow: 0 0 0.5em #4D7036, 0 0 0.5em #4D7036, 0 0 0.5em #4D7036;
+.nav-menu ul {
+	padding-bottom: 10px;
+	margin: 0;
+	line-height: 30px;	
 }
 
-nav a,
-nav a:link,
-nav a:visited {
+.nav-menu li {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+	position: relative;
 	display: inline-block;
+	width: 30%;
 }
 
-.selected {
-	color: #B9D686;
-	text-shadow: 0 0 0.5em #4D7036, 0 0 0.5em #4D7036, 0 0 0.5em #4D7036
+.nav-menu ul li a {
+	margin: 0;
+	text-align: left;
+	text-decoration: none;
+	display: inline;
+	color: #000;
+	text-shadow: 0 0 0.5em #B2CF39, 0 0 0.5em #B2CF39, 0 0 0.5em #B2CF39;
+}
+
+.nav-menu ul ul {
+	position: absolute;
+	visibility: hidden;
+	top: 30px;
+	padding-left: 5px;
+	padding-bottom: 5px;
+}
+
+.nav-menu ul ul li {
+	display: block;
+	width: 150px;
+}
+
+.nav-menu ul li:hover ul {
+	visibility: visible;
+	background-image: url(../img/dark-mosaic/dark-mosaic.png);
+	padding-left: 20px;
+	margin: 0;
+	display: block;
+	color: #000;
+}
+
+.nav-style {
+	display: inline;
+	color: #000;
+	text-shadow: 0 0 0.5em #B2CF39, 0 0 0.5em #B2CF39, 0 0 0.5em #B2CF39;
+}
+
+.nav-menu .selected {
+	color: #000;
+	text-shadow: 0 0 0.5em #D8E7DE, 0 0 0.5em #D8E7DE, 0 0 0.5em #D8E7DE;
 }
 
 .main-bucket {
@@ -109,6 +146,24 @@ nav a:visited {
   word-spacing: normal;
 }
 
+.button-li {
+	list-style-type: none;
+	padding: 20px;
+}
+
+.button {
+	padding: 0.5em 0.7em;
+	color: #6B9E42;
+	border-radius: 20px;
+	box-shadow: 0 1px 4px rgbd(0,0,0,0.5);
+	background-color: #B2CF39;
+	display: inline-block;
+	width: 200px;
+	text-align: center;
+	text-decoration: none;
+	box-shadow: 0 0 1em #B2CF39, 0 0 1em #B2CF39, 0 0 1em #B2CF39;
+}
+
 footer {
 	font-size: 0.75em;
 	display: inline;
@@ -122,7 +177,6 @@ html {
 
 header {
 	margin-bottom: 0;
-	
 }
 
 .logo {
@@ -132,12 +186,17 @@ header {
 
 h1 {
 	display: block;
+	width: auto;
 	padding-top: 135px;
 }
 
-nav {
-	text-align: left;
+.nav-style {
+	display: block;
 	max-width: 150px;
+}
+
+.nav-menu li {
+	display: block;
 }
 
 nav li {
@@ -157,7 +216,7 @@ nav li {
     width: 80%;
 	margin-left: 150px;
 	display: inline-block;
-	padding-top: -150px;
+	padding: 0;
 } 
  
 p {
@@ -170,7 +229,10 @@ p {
 
 .firefly-1-2 {
 	float: right;
-	
+}
+
+.button-li {
+	margin-left: 20%;
 }
 }
 
