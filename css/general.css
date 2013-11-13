@@ -13,6 +13,62 @@ html {
 	font-size: 1em;
 }
 
+.skiplinks {
+	margin: 0;
+	padding: 0;
+	position: absolute;
+	width: 100%;
+	z-index: 3000;
+	
+	font-size: 1.25rem;
+	font-weight: bold;
+	list-style-type: none;
+}
+
+.skiplinks a,
+.skiplinks a:link,
+.skiplinks a:visited {
+	padding: 0.75em 1 em;
+	position: absolute;
+	top: -10em;
+	
+	background-color: #000;
+	
+	color: #fff;
+	text-decoration: none;
+}
+
+.skiplinks a:focus {
+	top: 0;
+}
+
+a,
+a:link,
+a:visited {
+	/*
+	Change your colour, etc.
+	The underline is also an extremely important accessability feature
+	You should have an underline;
+		but you can use a boarder if you want more control
+	*/	
+}
+
+a:hover,
+a:active {
+	/*
+	It's okay to remove the outline on hover/active
+	because they are mouse-based interactions
+	*/
+	outline: none;
+}
+
+a:focus {
+	/*
+	You must ALWAYS have outline in the focus state
+	*/ 
+	outline: 3px solid #FFF;
+}
+
 .search {
 	text-align: right;
 	display: inline-block;
@@ -156,6 +212,11 @@ h3 {
 	padding: 20px;
 }
 
+.button-ul {
+	list-style-type: none;
+	padding: 20px;
+}
+
 .button {
 	padding: 0.5em 0.7em;
 	color: #6B9E42;
@@ -243,6 +304,11 @@ p {
 
 .button-li {
 	margin-left: 20%;
+}
+
+.button-ul {
+	list-style-type: none;
+	padding: 0 0 7% 0;
 }
 }
 
