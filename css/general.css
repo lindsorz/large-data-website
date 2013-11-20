@@ -236,6 +236,12 @@ footer {
 	color: #19494D; 
 }
 
+.error-img {
+}
+
+.error-text {
+}
+
 @media only screen and (min-width: 37.75em) {
 html {
 	max-width: 1200px;
@@ -310,6 +316,21 @@ p {
 	list-style-type: none;
 	padding: 0 0 7% 0;
 }
+
+.error-img {
+	margin-top: 10%;
+	margin-left: 7%;
+	display: block;
+}
+
+.error-text {
+	max-width: 50%;
+	min-width: 240px;
+	display: block;
+	margin-left: 500px;
+	margin-top: -500px;
+}
+
 }
 
 @media only screen and (min-width: 80em) {
