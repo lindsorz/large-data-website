@@ -242,6 +242,11 @@ footer {
 .error-text {
 }
 
+.no-list-style {
+	list-style-type: none;
+	padding-left: 40px;	
+}
+
 @media only screen and (min-width: 37.75em) {
 html {
 	max-width: 1200px;
