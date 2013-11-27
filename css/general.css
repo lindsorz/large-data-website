@@ -144,7 +144,7 @@ h3 {
 	text-decoration: none;
 	display: inline;
 	color: #000;
-	text-shadow: 0 0 0.5em #B2CF39, 0 0 0.5em #B2CF39, 0 0 0.5em #B2CF39;
+	text-shadow: 0 0 0.5em #B2CF39;
 }
 
 .nav-menu ul ul {
@@ -172,12 +172,12 @@ h3 {
 .nav-style {
 	display: inline;
 	color: #000;
-	text-shadow: 0 0 0.5em #B2CF39, 0 0 0.5em #B2CF39, 0 0 0.5em #B2CF39;
+	text-shadow: 0 0 0.5em #B2CF39;
 }
 
 .nav-menu .selected {
 	color: #000;
-	text-shadow: 0 0 0.5em #D8E7DE, 0 0 0.5em #D8E7DE, 0 0 0.5em #D8E7DE;
+	text-shadow: 0 0 0.5em #D8E7DE;
 }
 
 .main-bucket {
