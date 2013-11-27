@@ -9,8 +9,14 @@ html {
 	max-width: 600px;
 	color: #D8E7DE;
 	background-image: url(../img/dark-mosaic/dark-mosaic.png);
+	background-color: #000;
 	font-family: "Avenir", sans-serif;
 	font-size: 1em;
+}
+
+body {
+	max-width: 700px;
+	margin: 0 auto;
 }
 
 .skiplinks {
@@ -250,6 +256,10 @@ footer {
 @media only screen and (min-width: 37.75em) {
 html {
 	max-width: 1200px;
+}
+
+body {
+	max-width: none;
 }
 
 header {
