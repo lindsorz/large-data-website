@@ -32,6 +32,11 @@ label {
 	font-size: 1.2em;
 }
 
+legend {
+	font-family: 'IM Fell English', serif;
+	font-size: 1.2em;
+}
+
 input {
 	font-size: 1rem;
 }
@@ -53,6 +58,10 @@ textarea {
 	height: 8em;
 }
 
+fieldset {
+	border: none;
+}
+
 .error {
 	display: block;
 	color: #900;
@@ -71,12 +80,12 @@ p {
 	font-size: 1.2em;
 }
 
-li {
-	list-style-type: none;
-	display: inline ;
-	padding-left: 35%;
+button img {
+	width: 30%;	
 }
 
-li a img {
-	width: 30%;	
+button {
+	background-color: transparent;
+	border: none;
+	cursor: pointer;
 }
