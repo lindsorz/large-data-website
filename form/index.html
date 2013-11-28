@@ -1,0 +1,108 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Ye' Ole Swashbucklers Book Readin' Club</title>
+	<link href="css/general.css" rel="stylesheet">
+	<link href='http://fonts.googleapis.com/css?family=Meddon' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=IM Fell English' rel='stylesheet' type='text/css'>
+	<meta name="handheldfriendly" content="true">
+	<meta name="mobiloptimized" content="240">
+	<meta name="viewport" content="width=device-width;initial-scale=1">
+</head>
+<body>
+	<h1>Ye' Ole Swashbucklers Book Readin' Club</h1>
+	<form>
+		<div class="spacing">
+			<label for="name">
+			Wha' be yer name?
+			<strong class="error">We'll rip an' burn yer Jolly Roger, ye salty, pox-faced Kraken... Strike yer name or walk th' gangplank!</strong>
+			</label>
+			<input type="text" id="name" class="input-text input-error" required>
+		</div>
+		<div class="spacing">
+			<label for="email">
+			Wha' be yer email? Th' biggest length be 256 characters.
+			<strong class="error">Enough wit' yer bilge, ye sorry, black-spotted, nattering wretch ... Strike yer email! Yo ho ho an' a bottle o' rum!</strong>
+			</label>
+			<input type="email" id="email" class="input-text input-error" maxlength="256" required>
+		</div>
+		<div class="spacing">
+			<label for="phonenumber">Wha' be yer phone number?</label>
+			<input type="tel" id="phonenumber" class="input-text">	
+		</div>
+		<div class="spacing">
+			<label for="address">Wha' be yer address?</label>
+			<input type="text" id="address" class="input-text" required>	
+		</div>
+		<div class="spacing">
+			<label for="city">Wha' city do ye live in?</label>
+			<input type="text" id="city" class="input-text" required>	
+		</div>
+		<div class="spacing">
+			<label for="province">Wha' province do ye live in?</label>
+			<select id="province" required>
+				<option>Ontario</option>
+				<option>Alberta</option>
+				<option>British Columbia</option>
+				<option>Manitobia</option>
+				<option>New Brunswick</option>
+				<option>Newfoundland</option>
+				<option>Northwest Territories</option>
+				<option>Nova Scotia</option>
+				<option>Nunavut</option>
+				<option>P.E.I</option>
+				<option>Quebec</option>
+				<option>Saskatchewan</option>
+				<option>Yukon</option>
+			</select>
+		</div>
+		<div class="spacing">
+			<label for="postalcode">Wha' be yer postal code?</label>
+			<input type="text" id="postalcode" class="input-text" maxlength="7" required>	
+		</div>
+		<div class="spacing">
+			<label for="time">Wha' time o' day would be th' best t' get together?</label>
+			<input type="time" id="time" class="input-text" required>
+		</div>
+		<div class="spacing">
+			<label for="age">How many books 'ave ye read this year?</label>
+			<input type="number" id="age" min="1" max="130" pattern="[0-500}*">
+		</div>
+		<div class="spacing">
+			<label for="favourite">Describe yer favourite book 'n author.</label>
+			<textarea type="why" id="favourite" class="input-text"></textarea>
+		</div>
+		<div class="spacing">
+		<fieldset>
+			<legend>'ow much do ye love this genre?</legend>
+			
+			<div>
+				<input type="radio" id="extreme-bad" name="satisfation">
+				<label for="extreme-bad">T' th' depths o' Davey Jones' locker wit' it!</label>
+			</div>
+			<div>
+				<input type="radio" id="bad" name="satisfation">
+				<label for="bad">I would prefer nah t' read it.</label>
+			</div>
+			<div>
+				<input type="radio" id="neutral" name="satisfation">
+				<label for="neutral">'Tis okay.</label>
+			</div>
+			<div>
+				<input type="radio" id="good" name="satisfation">
+				<label for="good">I would read it.</label>
+			</div>
+			<div>
+				<input type="radio" id="extreme-good" name="satisfation">
+				<label for="extreme-good">I would scuttle a scallywag t' get me hands on it.</label>
+			</div>	
+		</fieldset>
+		<p>Click th' wax seal when ye've finished fillin' out yer information.</p>
+		</div>
+		<li>
+			<a href="thankyou.html" class=""><img src="images/5426767350_257df36030_o_SFW.png"></a>
+		</li>
+	</form>
+</body>
+</html>
