@@ -179,7 +179,7 @@ h3 {
 	text-shadow: 0 0 0.5em #B2CF39, 0 0 0.5em #B2CF39, 0 0 0.5em #B2CF39;
 }
 */
-.nav-menu .selected {
+.nav-menu .current {
 	color: #000;
 	text-shadow: 0 0 0.5em #D8E7DE, 0 0 0.5em #D8E7DE, 0 0 0.5em #D8E7DE;
 }
