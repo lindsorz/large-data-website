@@ -1,2 +1,4 @@
 _site
 *.html
+
+_layouts/default.html
