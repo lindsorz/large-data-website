@@ -1,0 +1,353 @@
+@-moz-viewport { width: device-width; scale: 1; }
+@-ms-viewport { width: device-width; scale: 1; }
+@-o-viewport { width: device-width; scale: 1; }
+@-webkit-viewport { width: device-width; scale: 1; }
+@viewport { width: device-width; scale: 1; }
+
+html {
+	min-width: 240px;
+	max-width: 600px;
+	color: #D8E7DE;
+	background-image: url(../img/dark-mosaic/dark-mosaic.png);
+	font-family: "Avenir", sans-serif;
+	font-size: 1em;
+}
+
+.skiplinks {
+	margin: 0;
+	padding: 0;
+	position: absolute;
+	width: 100%;
+	z-index: 3000;
+	
+	font-size: 1.25rem;
+	font-weight: bold;
+	list-style-type: none;
+}
+
+.skiplinks a,
+.skiplinks a:link,
+.skiplinks a:visited {
+	padding: 0.75em 1 em;
+	position: absolute;
+	top: -10em;
+	
+	background-color: #000;
+	
+	color: #fff;
+	text-decoration: none;
+}
+
+.skiplinks a:focus {
+	top: 0;
+}
+
+a,
+a:link,
+a:visited {
+	/*
+	Change your colour, etc.
+	The underline is also an extremely important accessability feature
+	You should have an underline;
+		but you can use a boarder if you want more control
+	*/	
+}
+
+a:hover,
+a:active {
+	/*
+	It's okay to remove the outline on hover/active
+	because they are mouse-based interactions
+	*/
+	outline: none;
+}
+
+a:focus {
+	/*
+	You must ALWAYS have outline in the focus state
+	*/ 
+	outline: 3px solid #FFF;
+}
+
+.search {
+	text-align: right;
+	display: inline-block;
+	width: 100%;
+}
+
+header {
+	width: auto;
+	height: 200px;
+	margin-bottom: 50px;
+	padding-left: 20px;
+}
+
+.logo {
+	max-width: 200px;
+	display: block;
+}
+
+h1 {
+	padding-left: 20px;
+	margin: 0;
+	display: inline-block;
+	width: 100%;
+	color: #19494D;
+	font-family: "Emmascript MVB Std";
+	font-size: 3em;
+	text-shadow: 0 0 1em #19494D, 0 0 1em #19494D, 0 0 1em #19494D;
+}
+
+h2 {
+	padding-left: 20px;
+	padding-top: 20px;
+	margin: 0;
+	display: inline-block;
+	color: #B9D686;
+	font-family: "Emmascript MVB Std";
+	font-size: 2em;
+	text-shadow: 0 0 1em #B9D686, 0 0 1em #B9D686, 0 0 1em #B9D686;
+}
+
+h3 {
+	padding-left: 25px;
+	padding-bottom: -5px;
+	color: #B9D686;
+	font-family: "Emmascript MVB Std";
+	font-size: 1.5em;
+	text-shadow: 0 0 1em #B9D686, 0 0 1em #B9D686, 0 0 1em #B9D686;
+}
+
+.nav-menu {
+	padding: 0;
+	margin: 0;	
+}
+
+.nav-menu ul {
+	padding-bottom: 10px;
+	margin: 0;
+	line-height: 30px;	
+}
+
+.nav-menu li {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+	position: relative;
+	display: inline-block;
+	width: 30%;
+}
+
+.nav-menu ul li a {
+	margin: 0;
+	text-align: left;
+	text-decoration: none;
+	display: inline;
+	color: #000;
+	text-shadow: 0 0 0.5em #B2CF39, 0 0 0.5em #B2CF39, 0 0 0.5em #B2CF39;
+}
+
+.no-textshadow .nav-menu ul li a {
+	color: #fff;;
+}
+
+.nav-menu ul ul {
+	position: absolute;
+	visibility: hidden;
+	top: 30px;
+	padding-left: 5px;
+	padding-bottom: 5px;
+}
+
+.nav-menu ul ul li {
+	display: block;
+	width: 150px;
+}
+
+.nav-menu ul li:hover ul {
+	visibility: visible;
+	background-image: url(../img/dark-mosaic/dark-mosaic.png);
+	padding-left: 20px;
+	margin: 0;
+	display: block;
+	color: #000;
+}
+/*
+.nav-style {
+	display: inline;
+	color: #000;
+	text-shadow: 0 0 0.5em #B2CF39, 0 0 0.5em #B2CF39, 0 0 0.5em #B2CF39;
+}
+*/
+.nav-menu .selected {
+	color: #000;
+	text-shadow: 0 0 0.5em #D8E7DE, 0 0 0.5em #D8E7DE, 0 0 0.5em #D8E7DE;
+}
+
+.main-bucket {
+	display: block;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+.display-1 {
+	max-width: 100%;
+	display: block;
+}
+
+.display-2 {
+	max-width: 100%;
+	display: block;
+}
+
+.unit {
+  display: inline-block;
+  *display: inline;
+  zoom: 1;
+  letter-spacing: normal;
+  text-rendering: auto;
+  vertical-align: top;
+  word-spacing: normal;
+}
+
+.button-li {
+	list-style-type: none;
+	padding: 20px;
+}
+
+.button-ul {
+	list-style-type: none;
+	padding: 20px;
+}
+
+.button {
+	padding: 0.5em 0.7em;
+	color: #6B9E42;
+	border-radius: 20px;
+	box-shadow: 0 1px 4px rgbd(0,0,0,0.5);
+	background-color: #B2CF39;
+	display: inline-block;
+	width: 200px;
+	text-align: center;
+	text-decoration: none;
+	box-shadow: 0 0 1em #B2CF39, 0 0 1em #B2CF39, 0 0 1em #B2CF39;
+}
+
+footer {
+	font-size: 0.75em;
+	display: inline;
+	color: #19494D; 
+}
+
+.error-img {
+}
+
+.error-text {
+}
+
+.no-list-style {
+	list-style-type: none;
+	padding-left: 40px;	
+}
+
+@media only screen and (min-width: 37.75em) {
+html {
+	max-width: 1200px;
+}
+
+header {
+	margin-bottom: 0;
+}
+
+.logo {
+	float: left;
+	display: block;
+}
+
+h1 {
+	display: block;
+	width: auto;
+	padding-top: 135px;
+}
+
+.nav-style {
+	display: block;
+	max-width: 150px;
+}
+
+.nav-menu li {
+	display: block;
+}
+
+nav li {
+	display: block;
+	padding-bottom: 15px;
+}
+
+.unit-s-1-3 {
+    width: 33.33333%;
+}
+ 
+.unit-s-2-3 {
+    width: 60%;
+}
+
+.unit-m-1-2 {
+    width: 80%;
+	margin-left: 150px;
+	margin-top: -100px;
+	display: inline-block;
+	padding: 0;
+} 
+ 
+p {
+	padding-left: 5%; 
+}
+
+.display-1 {
+	max-width: 50%;
+	display: inline-block;
+}
+
+.display-2 {
+	max-width: 50%;
+	display: inline-block;
+	float: right;
+	margin-top:-50%;
+}
+
+.button-li {
+	margin-left: 20%;
+}
+
+.button-ul {
+	list-style-type: none;
+	padding: 0 0 7% 0;
+}
+
+.error-img {
+	margin-top: 10%;
+	margin-left: 7%;
+	display: block;
+}
+
+.error-text {
+	max-width: 50%;
+	min-width: 240px;
+	display: block;
+	margin-left: 500px;
+	margin-top: -500px;
+}
+
+}
+
+@media only screen and (min-width: 80em) {
+html {
+	font-size: 1.5em;
+}
+
+header {
+	padding-bottom: 20px;
+}
+}
