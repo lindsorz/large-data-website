@@ -1,8 +1,8 @@
 ---
-layout: none
-title:
-meta:
-source:
+layout: news
+title: Lighting up the Natural World
+meta: A new type of fungi has been discovered on the jungle floors of the Congo.
+source: http://www.bbc.co.uk/nature/21011428
 category: news
 ---
 # Bioluminscence: Lighting Up the Natural World
