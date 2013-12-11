@@ -255,6 +255,11 @@ footer {
 	list-style-type: none;
 }
 
+
+
+
+
+
 @media only screen and (min-width: 37.75em) {
 html {
 	max-width: 1200px;
@@ -314,13 +319,6 @@ p {
 	display: inline-block;
 }
 
-.display-2 {
-	max-width: 50%;
-	display: inline-block;
-	float: right;
-	margin-top:-50%;
-}
-
 .button-li {
 	margin-left: 20%;
 }
@@ -345,6 +343,11 @@ p {
 }
 
 }
+
+
+
+
+
 
 @media only screen and (min-width: 80em) {
 html {
