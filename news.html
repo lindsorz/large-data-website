@@ -1,0 +1,19 @@
+---
+layout: default
+title: News
+meta: articles about recent events relating to bioluminscence
+---
+
+	<div class="unit unit-m-1-2">
+		<img src="img/about-banner" class="main-bucket" alt="Bioluminescent Beach Algea">	
+		<h2>Current Events</h2>
+
+		<ul>
+			{% for news in site.posts %}
+			<li class="no-bullets">
+				<a href="{{news.source}}">{{news.title}}</a>
+				<p>{{news.meta}}</p>
+			</li>
+			{% endfor %}
+		</ul>
+	</div>	
